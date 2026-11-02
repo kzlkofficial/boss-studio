@@ -1,0 +1,34 @@
+name: Import original Boss Studio assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets-import.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-original-assets:
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and import original PNG files
+        run: |
+          test -f assets-import.zip
+          python3 program/tools/restore_assets_from_zip.py assets-import.zip
+          rm assets-import.zip
+      - name: Commit recovered files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- assets-import.zip program/assets "ПРЕДПРОСМОТР.png" "ПРЕДПРОСМОТР_РЕДАКТОРА.png"
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "Import verified original Boss Studio 4.9 PNG assets"
+          git push origin HEAD:main

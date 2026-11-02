@@ -40,7 +40,8 @@ def main():
 
             candidates = [
                 name for name in names
-                if name.replace("\\", "/").endswith("/" + rel)
+                if (name.replace("\\", "/") == rel
+                    or name.replace("\\", "/").endswith("/" + rel))
                 and not name.endswith("/")
             ]
             if len(candidates) != 1:
