@@ -1,0 +1,66 @@
+{
+  "program/assets/fox/01_idle.png": {
+    "size": 640899,
+    "sha256": "4dc2b5765ee961dff7e9a2485b88717a9659763d6968809701fda313f139b79c"
+  },
+  "program/assets/fox/02_attack.png": {
+    "size": 949659,
+    "sha256": "c20f5676f9fa76285530d9607176e2772e5bb8c8130c17c21f159d4769c8deb0"
+  },
+  "program/assets/fox/03_hurt.png": {
+    "size": 568961,
+    "sha256": "31f6b6d4f0ad0c0ddad51a0f8bab504553cd1bfc94e614f2af8292b9a8ec73d9"
+  },
+  "program/assets/fox/04_phase_change.png": {
+    "size": 902745,
+    "sha256": "383cc8fc65284d116c6d7a15f5aa59c089dfece79a89975a44bfbd4056cfa055"
+  },
+  "program/assets/fox/05_phase_2.png": {
+    "size": 925364,
+    "sha256": "406070db898d004fc69444b601fb9f542b837ba2ff3202a92aba56cd619a60a5"
+  },
+  "program/assets/fox/06_phase_3.png": {
+    "size": 971969,
+    "sha256": "635893910470af09396c08a80e0932412e9b966ebffb5d920ff9506ab875ac5e"
+  },
+  "program/assets/fox/07_death.png": {
+    "size": 1642761,
+    "sha256": "5f4cba72a3984fc3c5c9c477e3b9282788a488333c0dc15b9ca69b7e98c15acd"
+  },
+  "program/assets/silver/01_idle.png": {
+    "size": 713856,
+    "sha256": "17f02664c9cb7be2e72dd6be0be4126091308d7f91c192814857f6fc8d01eadf"
+  },
+  "program/assets/silver/02_attack.png": {
+    "size": 2422819,
+    "sha256": "7b6c0c5966ddb22605ea9600dcfebf803c31e2a2e814926af73fcc1ec18f408a"
+  },
+  "program/assets/silver/03_hurt.png": {
+    "size": 1095886,
+    "sha256": "dad96ca0c9f320a64cffefed8611b8db383e395ea3b14f0ab24d47a0e36d0f62"
+  },
+  "program/assets/silver/04_phase_change.png": {
+    "size": 2073769,
+    "sha256": "86c52b18b07efca3f1459ef7ddbf9d2d15cee868d002ef5c7d689adf689a9c66"
+  },
+  "program/assets/silver/05_phase_2.png": {
+    "size": 1130538,
+    "sha256": "5789157978aecc2adf8555278bfe0801b789e9830d803f4ff68412a3a0a1ffb6"
+  },
+  "program/assets/silver/06_phase_3.png": {
+    "size": 1233679,
+    "sha256": "d14eaca3221b693886c53f13ef9deaf2cc480e1b581c945b07e81770c4478222"
+  },
+  "program/assets/silver/07_death.png": {
+    "size": 770006,
+    "sha256": "229fb9ce6bc0da7baeec076b9bf8d2868087596bab792a242c71f28882e80362"
+  },
+  "ПРЕДПРОСМОТР.png": {
+    "size": 1179838,
+    "sha256": "adc96a9e3d5eda8ce750b22a1a06ab62c0d58c37673aad9693fde9745d626959"
+  },
+  "ПРЕДПРОСМОТР_РЕДАКТОРА.png": {
+    "size": 223625,
+    "sha256": "5463d25583e01f5b41d0ea65ca27a168f089bb3099b429c528c5b4e0a390f30f"
+  }
+}
