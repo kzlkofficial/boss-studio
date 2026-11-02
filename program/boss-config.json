@@ -1,0 +1,105 @@
+{
+  "version": 4,
+  "adminLogin": "",
+  "websocketUrl": "ws://127.0.0.1:8080/",
+  "economy": {
+    "spawnChance": 100,
+    "hitDamage": 60,
+    "magicDamage": 180,
+    "hitCooldownSec": 25,
+    "magicCooldownSec": 55,
+    "guardCooldownSec": 20,
+    "phase2Percent": 70,
+    "phase3Percent": 30,
+    "phase2Armor": 900,
+    "phase3Armor": 1400,
+    "guardRequired": 3,
+    "guardHealPercent": 4,
+    "guardDurationSec": 18,
+    "followDamage": 80,
+    "bitsDamagePerBit": 1,
+    "bitsDamageCap": 2000,
+    "subDamage": 700,
+    "resubDamage": 700,
+    "giftSubDamage": 450,
+    "giftSubCap": 10,
+    "donationDamagePerUnit": 90,
+    "donationAmountCap": 100,
+    "rewardDamage": 450
+  },
+  "bosses": [
+    {
+      "id": "red_fox",
+      "name": "Багровый лис",
+      "rarity": "rare",
+      "weight": 60,
+      "hp": 12000,
+      "armor": 300,
+      "enabled": true,
+      "sprites": {
+        "idle": "assets/fox/01_idle.png",
+        "attack": "assets/fox/02_attack.png",
+        "hurt": "assets/fox/03_hurt.png",
+        "phase_change": "assets/fox/04_phase_change.png",
+        "phase_2": "assets/fox/05_phase_2.png",
+        "phase_3": "assets/fox/06_phase_3.png",
+        "death": "assets/fox/07_death.png"
+      },
+      "animations": {
+        "spawnFadeMs": 900,
+        "spawnRisePx": 14,
+        "hurtMs": 350,
+        "phaseMs": 1900,
+        "deathHoldMs": 1700,
+        "deathFadeMs": 1100
+      },
+      "trophy": {
+        "name": "Трофей Багровый лис",
+        "image": "",
+        "memcoins": 100
+      }
+    },
+    {
+      "id": "silver_fox",
+      "name": "Серебряная лисица",
+      "rarity": "epic",
+      "weight": 40,
+      "hp": 14000,
+      "armor": 450,
+      "enabled": true,
+      "sprites": {
+        "idle": "assets/silver/01_idle.png",
+        "attack": "assets/silver/02_attack.png",
+        "hurt": "assets/silver/03_hurt.png",
+        "phase_change": "assets/silver/04_phase_change.png",
+        "phase_2": "assets/silver/05_phase_2.png",
+        "phase_3": "assets/silver/06_phase_3.png",
+        "death": "assets/silver/07_death.png"
+      },
+      "animations": {
+        "spawnFadeMs": 900,
+        "spawnRisePx": 14,
+        "hurtMs": 350,
+        "phaseMs": 1900,
+        "deathHoldMs": 1700,
+        "deathFadeMs": 1100
+      },
+      "trophy": {
+        "name": "Трофей Серебряная лисица",
+        "image": "",
+        "memcoins": 100
+      }
+    }
+  ],
+  "schedule": {
+    "enabled": false,
+    "firstDelayMin": 120,
+    "nextDelayMin": 60,
+    "maxBosses": 3,
+    "queue": [
+      {
+        "kind": "random"
+      }
+    ]
+  }
+}
